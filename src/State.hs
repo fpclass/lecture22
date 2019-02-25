@@ -38,6 +38,9 @@ instance Applicative (State s) where
                                     (x,s'') = m' s'
                                 in (f x,s'')
 
+runRandom :: State StdGen a -> Int -> (a, StdGen)
+runRandom m n = runState m (mkStdGen n)
+
 --------------------------------------------------------------------------------
 -- Random number example
 
