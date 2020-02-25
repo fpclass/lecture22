@@ -1,9 +1,9 @@
-name:                lecture21
+name:                lecture
 version:             2.0.0.0
-homepage:            https://github.com/fpclass/lecture21#readme
+homepage:            https://github.com/fpclass/lecture22#readme
 author:              Michael B. Gale
 maintainer:          m.gale@warwick.ac.uk
-copyright:           Copyright 2019 Michael B. Gale
+copyright:           Copyright 2020 Michael B. Gale
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
@@ -16,4 +16,4 @@ library
 
 source-repository head
   type:     git
-  location: https://github.com/fpclass/lecture21
+  location: https://github.com/fpclass/lecture22

@@ -1,2 +1,3 @@
-# lecture21
-Code shown in the 21st lecture, "Sequential composition (cont.)"
+# Lecture: Sequential composition (cont.)
+
+Code shown in the CS141 lecture on sequential composition (cont.)

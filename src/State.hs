@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- Functional Programming (CS141)                                             --
--- Lecture 21: Sequential composition (cont.)                                 --
+-- Lecture: Sequential composition (cont.)                                    --
 --------------------------------------------------------------------------------
 
 {-# LANGUAGE DeriveFunctor #-}

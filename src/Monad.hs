@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- Functional Programming (CS141)                                             --
--- Lecture 21: Sequential composition (cont.)                                 --
+-- Lecture: Sequential composition (cont.)                                    --
 --------------------------------------------------------------------------------
 
 -- Needed because we define our own Monad type class rather than the one from
@@ -37,8 +37,8 @@ instance Monad [] where
     xs >>= f = concat (map f xs)
 
 instance Monoid w => Monad (Writer w) where
-    MkWriter (x,w) >>= f = MkWriter $ let MkWriter (r,w') = f x
-                                      in (r,w `mappend` w')
+    MkWriter (x,o1) >>= f = MkWriter $ let MkWriter (r,o2) = f x
+                                       in (r,o1 <> o2)
 
 instance Monad (State s) where
     St m >>= f = St $ \s -> let (x,s')  = m s
@@ -81,14 +81,14 @@ coords'' = do
     y <- [0..10]
     pure (x,y)
 
-comp'' :: Expr -> Writer [LogMessage] Program
+comp'' :: Expr -> Writer [String] Program
 comp'' (Val n) = do
-    logM "comp" "compiling a value"
+    writeLog "compiling a value"
     pure [PUSH n]
 comp'' (Plus l r) = do
-    logM "comp" "compiling a plus"
-    p  <- comp l
-    p' <- comp r
-    pure (p ++ p' ++ [ADD])
+    writeLog "compiling a plus"
+    pl <- comp l
+    pr <- comp r
+    pure (pl ++ pr ++ [ADD])
 
 --------------------------------------------------------------------------------
