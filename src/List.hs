@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- Functional Programming (CS141)                                             --
--- Lecture: Sequential composition (cont.)                                    --
+-- Lecture: Sequential composition                                            --
 --------------------------------------------------------------------------------
 
 module List where

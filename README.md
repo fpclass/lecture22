@@ -1,3 +1,3 @@
-# Lecture: Sequential composition (cont.)
+# Lecture: Sequential composition
 
-Code shown in the CS141 lecture on sequential composition (cont.)
+Code shown in the CS141 lecture on sequential composition.

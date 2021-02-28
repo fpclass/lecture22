@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- Functional Programming (CS141)                                             --
--- Lecture: Sequential composition (cont.)                                    --
+-- Lecture: Sequential composition                                            --
 --------------------------------------------------------------------------------
 
 -- Needed because we define our own Monad type class rather than the one from
